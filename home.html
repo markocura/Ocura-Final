@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hotel</title>
+    <br>
+    <br>
+    <head>
+        <header>
+            <center>
+                <h1>
+                    COME AND VISIT MY BEST HOTEL!!!
+                </h1>
+            </center>
+          <center>  <nav>
+                <strong> <a href="home.html">Home</a></strong>
+                 <strong><a href="about.html">About</a></strong>
+                <strong> <a href="gallery.html">Gallery</a></strong>
+                <strong> <a href="rooms.html">Rooms</a></strong>
+                <strong> <a href="contact.html">Contacts</a></strong>
+             </nav>
+            </center>
+        </header>
+    </head>
+    <br>
+    <br>
+    <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body bgcolor="gray"
+  style="color: blue;">
+    
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <div class="image-container">
+        <img src="banner1.jpg" class="slide" width="500" height="300" />
+        <img src="banner 3.webp" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+      </div>
+    </div>
+    <br>
+    <br> <center>
+    <img src="background.jpg" alt="" height="500"
+    width="2000">
+    </center>
+  </body>
+</html
